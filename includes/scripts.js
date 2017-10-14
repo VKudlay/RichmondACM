@@ -14,7 +14,7 @@ $(document).ready(function(){
 	//Selected menu button toggle + menu toggle
 	$("ul.nav li").click(function() {
 		$("iframe").attr("src", 
-			"pages/"+$(this).text()+"/index.html");
+			"pages/"+$(this).attr('name')+"/index.html");
 
 		$("ul.nav li").not($(this)).removeClass("selected");
 		$(this).addClass("selected");
