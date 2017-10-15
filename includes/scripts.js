@@ -12,11 +12,11 @@ $(document).ready(function(){
 	});
 
 	//Selected menu button toggle + menu toggle
-	$("ul.nav li").click(function() {
+	$(".nav li").click(function() {
 		$("iframe").attr("src", 
-			"pages/"+$(this).attr('name')+"/index.html");
+			"pages/"+$(this).attr('id')+"/index.html");
 
-		$("ul.nav li").not($(this)).removeClass("selected");
+		$(".nav li").not($(this)).removeClass("selected");
 		$(this).addClass("selected");
 	});
 });
