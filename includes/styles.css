@@ -1,4 +1,5 @@
 body { margin: 0px; }
+ul {list-style: none;}
 
 /*Makes highlighting anything in header impossible*/
 header {
@@ -35,9 +36,9 @@ header {
 /* ---------------- Header ----------------- */
 /* ----------------------------------------- */
 
-header {
+#header-body {
 	position: relative;
-    overflow: hidden;
+    overflow: initial;
 
     width: 100%;
     border-bottom: 3px solid red;}
@@ -49,7 +50,8 @@ header {
 	padding: 25px;
 	height: 115px;
 
-	background-color: #e52d27;} 
+	background-color: #e52d27;
+} 
 #title h1 {
 	margin: auto;
 	position: relative;
@@ -60,34 +62,52 @@ header {
 	color: white;} 
 #title h1 span { font-weight: bold; }
 
-nav ul {
+nav ul.nav {
 	white-space: nowrap;
 	overflow: hidden;
-
-	height: 115px;
-	padding-left: 30px;
 }
-nav ul li {
-	display: inline;
+nav ul.nav > li {
 	position: relative;
 	float: left;
-
-	vertical-align: center;
-	width: 12%;
+	white-space: pre-wrap;
 
 	font-size: 1.2em;
-	padding: 50px 1%;
 } 
-nav ul li:first-child { 
-	width: 16%;
-} 
-
-nav ul li:hover {
+nav ul.nav > li:hover, li.hovered {
 	color: white;
 	background-color: lightgrey;
 } 
-nav ul li.selected {
+nav ul.nav > li:hover ul.sub-menu {
+	display: grid;
+	width: 200px;
+}
+nav ul.nav > li.selected {
 	background-color: #e52d27;
+	color: white;
+}
+
+ul.sub-menu {
+	z-index: 3;
+	position: fixed;
+	display: none;
+	padding: 0px;
+	overflow: hidden;
+
+	background-color: lightgrey;
+	border-top: 3px solid red;
+	border-left: 3px solid red;
+}
+ul.sub-menu > li {
+	position: relative;
+	display: inline-block;
+	float:left;
+
+	width: auto !important;
+	padding: 5px 10px;
+	font-size: 1em;
+	color: #555;
+}
+ul.sub-menu > li:hover {
 	color: white;
 }
 
@@ -105,24 +125,45 @@ nav ul li.selected {
 
 /* End of default width content */
 
+@media screen and (min-width: 1076px){
+	nav ul.nav {
+		height: 115px;
+	}
+	nav ul.nav > li {
+		width: 12%;
+		padding: 45px 1%;
+	} 
+	nav ul.nav > li.long {
+		padding: 35px 1%;
+	}
+	nav ul.nav > li:first-child { 
+		width: 16%;
+	} 
+}
+
 /*Begin justified content styles (636px - 1075px)*/
 @media screen and (max-width: 1075px){
 	#title {
 		width: 100%;
 	}
-	nav ul {
+	nav ul.nav {
 		float: none;
-		position: relative;
 		display: inline-block;
-		width: 520px;
+		width: 600px;
 		height: 40px;
 		vertical-align: bottom;
 	} 
-	nav ul li, nav ul li:first-child {
-		display: block;
-		padding: 10px 1.2%;
-		width: auto;
-	} 
+	nav ul.nav > li, nav ul.nav > li:first-child {
+		padding: 10px 2% !important;
+		width: min-content !important;
+	}
+	nav ul.nav > li, nav ul.nav > li:first-child {
+		padding: 10px 2% !important;
+		width: min-content !important;
+	}  	
+	ul.sub-menu {
+		top: 155px;
+	}
 } 
 
 /*Begin mobile content styles (< 636px)*/
@@ -148,7 +189,7 @@ nav ul li.selected {
 
 	nav ul.nav {
 		position: fixed;
-		vertical-align: bottom;
+		vertical-align: center;
 		z-index: 2;
 
 		width: 100px;
@@ -162,18 +203,29 @@ nav ul li.selected {
 		left: 0px !important;
 	}
 
-	nav ul li, header ul li:first-child {
+	nav ul.nav > li, header ul.nav > li:first-child {
 		display: inline-block;
 
 		width: 100% !important;
-		padding: 1.2vh 1%;
-		width: auto;
+		padding: 10vh 1%;
 		color: white;
+		height: 40px !important;
 
 		font-size: 1.3em;
-	} nav ul li.selected {
+	} nav ul.nav li.selected {
 		background-color: white;
 		color: grey;
+	}
+	ul.sub-menu {
+		background-color: white;
+		border-top: 0px !important;
+		left: 100px;
+	}
+	ul.sub-menu > li:hover {
+		background-color: lightgrey;
+	}
+	nav ul.nav > li:hover ul.sub-menu {
+		display: none;
 	}
 } 
 
