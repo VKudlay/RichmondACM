@@ -44,7 +44,7 @@ header {
 }
 
 
-@media (min-width: 1100px){
+@media screen and (min-width: 1100px){
 	div.navbar-collapse {
 		background-color: #333;
 	}
@@ -55,7 +55,7 @@ header {
 		font-size: 1.1em;
 	}
 }
-@media (max-width: 1100px){
+@media screen and (max-width: 1100px){
 	div.navbar-collapse ul.navbar-nav {
 		width: 100% !important;
 		margin: 0 !important;
@@ -65,7 +65,7 @@ header {
 		width: 100% !important;
 	}
 }
-@media (max-width: 769px){
+@media screen and (max-width: 769px){
 	button.navbar-toggle {
 		margin-top: -50px;
 	}
