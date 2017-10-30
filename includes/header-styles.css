@@ -65,9 +65,17 @@ header {
 		width: 100% !important;
 	}
 }
-@media screen and (max-width: 769px){
+@media screen and (max-width: 750px){
+	div.navbar-header{
+		font-size: .8em !important;
+		height: 115px;
+	}
+
 	button.navbar-toggle {
-		margin-top: -50px;
+		margin-top: -18px;
+		margin-right: 43%;
+		z-index: 5;
+		background-color: grey;
 	}
 	div.navbar-collapse {
 		position: absolute;
