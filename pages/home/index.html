@@ -1,13 +1,36 @@
-<head>
-	<style type="text/css"> 
-		@import url("home-styles.css");
-		@import url("../../includes/shared-styles.css");
-	</style>
+<!DOCTYPE html>
+<html lang="en-US" xml:lang="en-US">
 
+<head>
+	<!--Sets meta types about the website-->
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+	<!--Sets title of the page-->
+		<title>ACM's Best Web</title> 								
+
+	<!--Sets title of the page-->
+		<meta http-equiv="description" content="This is a crawlable description" />
+
+    <!--Bootstrap + Query Implementation -->
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!--Pulls in ALL CUSTOM CSS Stylesheet-->
+		<style type="text/css"> @import url("../../includes/header-styles.css"); </style>
+		<style type="text/css"> @import url("../../includes/shared-styles.css"); </style>
+		<style type="text/css">	@import url("styles.css"); </style>
+		
+	<!--Pulls in CUSTOM JS Script-->
+    	<script type="text/javascript" src="../../includes/child-scripts.js"></script>
 </head>
 
 <body>
-	<div id = "main-container">
-		<h1>Welcome to ACM!</h1>
+	<div id="container">
+		<header id="header"></header>
+
+		<main><h1>Welcome to ACM!</h1></main>
+
+		<footer></footer>
 	</div>
 </body>

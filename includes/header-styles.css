@@ -1,0 +1,74 @@
+$themeC: #e52d27;
+
+/*Makes highlighting anything in header impossible*/
+header {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    box-shadow: 0 4px 3px -3px gray;
+}
+
+	.navbar-inverse, .navbar-header h1 {
+		height: 115px;
+		border-radius: 0px;
+	    border-bottom: 3px solid red;
+	    border: none;
+	}
+	.container-fluid {
+		padding: 0px;
+	}
+
+	.navbar-header {
+		margin: 0px !important;
+	}
+	.navbar-header h1 {
+		padding: 0px 20px;
+		padding-top: 25px;
+		margin: 0px;
+
+		background-color: #e52d27;
+		font-size: 4em;
+		font-weight: lighter;
+		color: white;
+	}
+	.navbar-header span {
+		font-weight: bold;
+	}
+	.navbar-collapse {
+		padding: 0px;
+	}
+	.navbar li {
+		text-align: center;
+	}
+
+
+	@media screen and (min-width: 1177px){
+		div.navbar-collapse {
+			background-color: #333;
+		}
+		div.navbar-collapse > ul.navbar-nav > li > a{
+			line-height: 80px;
+			height: 115px !important;
+			color: lightgrey;
+			font-size: 1.1em;
+	}
+	@media screen and (max-width: 1176px){
+		ul.navbar-nav {
+			background-color: rgb(51, 51, 51);
+			width: 100% !important;
+			margin: 0 !important;
+
+		}
+		div.navbar-header {
+			width: 100%;
+		}
+	}
+	@media screen and (max-width: 769px){
+		button.navbar-toggle {
+			margin-top: -50px;
+		}
+	}
