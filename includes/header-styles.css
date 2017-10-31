@@ -27,11 +27,11 @@ header {
 	padding: 0px 20px;
 	padding-top: 25px;
 	margin: 0px;
-
 	background-color: #e52d27;
 	font-size: 4em;
 	font-weight: lighter;
 	color: white;
+	width:;
 }
 .navbar-header span {
 	font-weight: bold;
@@ -45,7 +45,17 @@ header {
 
 
 @media screen and (min-width: 1100px){
-	div.navbar-collapse {
+	.navbar-header h1 {
+		width: 400px;
+		float: left;
+		position: inline-block;
+	}
+
+	#toggle-menu-container {
+		float: left !important;
+		display: inline-block !importanti
+	}
+	div.navbar-collapse, div.navbar-inverse {
 		background-color: #333;
 	}
 	div.navbar-collapse > ul.navbar-nav > li > a{
@@ -65,7 +75,7 @@ header {
 		width: 100% !important;
 	}
 }
-@media screen and (min-width: 768px){
+@media screen and (max-width: 767px){
 	div.navbar-header{
 		font-size: 2vh !important;
 		height: 115px;
@@ -84,11 +94,6 @@ header {
 		margin: -18px auto;
 		z-index: 5;
 		background-color: grey;
-}
-@media screen and (max-width: 767px){
-
-	button.navbar-toggle {
-		margin-top: -50px;
 	}
 	div.navbar-collapse {
 		border-top-width: 0px !important;
