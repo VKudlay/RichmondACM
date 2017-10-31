@@ -1,52 +1,47 @@
 <div class="navbar navbar-inverse">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<h1>Richmond<span>ACM</span></h1>
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-    			<span class="icon-bar"></span>
-   				<span class="icon-bar"></span>
-    			<span class="icon-bar"></span>                        
-  			</button>
+	<div class="navbar-header">
+		<h1>Richmond<span>ACM</span></h1>
+		<div id="toggle-menu-container">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="true">
+				<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>                    
+			</button>
+			<div class="navbar-collapse collapse" id="myNavbar" aria-expanded="false" style="height: 0px;">
+				<ul class="nav navbar-nav">
+					<li><a>Home</a></li>
+					<li><a>About</a></li>
+					<li class="dropdown">					
+						<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+							Resources<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>Stuff</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="../careers/index.html">
+							Careers<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>career paths in CS</li>
+							<li>resume/career advice</li>
+							<li>student resumes</li>
+							<li>interview prep</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="../projects/index.html">
+							Projects<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>current projects</li>
+							<li>past projects</li>
+						</ul>
+					</li>
+					<li><a>Volunteer</a></li>
+					<li><a>Join</a></li>
+					<li><a>Contact</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="collapse navbar-collapse" id="myNavbar">
-			<ul class="nav navbar-nav">
-		      	<li><a href = "pages/home/index.html">Home</a></li>
-				<li><a href = "pages/about/index.html">About</a></li>
-				<li class="dropdown">					
-					<a class="dropdown-toggle" data-toggle="dropdown" href="pages/resources/index.html">
-		      			Resources
-		      			<span class="caret"></span>
-		      		</a>
-					<ul class="dropdown-menu">
-						<li>Stuff</li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="pages/careers/index.html">
-		      			Careers
-		      			<span class="caret"></span>
-		      		</a>
-					<ul class="dropdown-menu">
-						<li>career paths in CS</li>
-						<li>resume/career advice</li>
-						<li>student resumes</li>
-						<li>interview prep</li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="pages/projects/index.html">
-		      			Projects
-		      			<span class="caret"></span>
-		      		</a>
-					<ul class="dropdown-menu">
-						<li>current projects</li>
-						<li>past projects</li>
-					</ul>
-				</li>
-				<li><a href = "pages/volunteer/index.html">Volunteer</a></li>
-				<li><a href = "pages/join/index.html">Join</a></li>
-				<li><a href = "pages/contact/index.html">Contact</a></li>
-		    </ul>
-		 </div>
 	</div>
 </div>
