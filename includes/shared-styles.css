@@ -18,11 +18,14 @@ main {
 		padding-top: 30px;
 	}
 	#main-container, #main-container h1 {
-		margin-top: 30px !important;
+		margin-top: 30px;
 	}
 }
 
 @media screen and (max-width: 767px){
+	main {
+		padding-top: 15px !important;
+	}
 	#main-container, #main-container h1 {
 		margin-top: 0px !important;
 	}

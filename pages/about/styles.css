@@ -134,7 +134,7 @@ ul#about-menu li#active {
     	max-height: unset;
     }
     .about-text {
-        margin-top: 80px;
+        margin-top: 60px;
         margin-left: 0px;
     }
     h2, h3 {
@@ -159,7 +159,7 @@ ul#about-menu li#active {
     #about-menu-container {
         position: absolute;
         width: 90%;
-        top: 280px;
+        top: 270px;
     }
     ul#about-menu {
     	width: 100%;
