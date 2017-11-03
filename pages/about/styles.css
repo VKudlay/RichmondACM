@@ -1,0 +1,183 @@
+#main-container h1, h2, h3 {
+    font-family: 'PT Sans Caption', sans-serif;
+}
+
+#main-container {
+	margin: 50px auto;
+}
+#main-container h1 {
+	padding: 30px 50px;
+	border-left: 3px solid black;
+} 
+
+#about-text-holder {
+	max-height: 310px;
+	overflow: hidden;
+	position: absolute;
+	z-index: 0;
+}
+.about-text{
+	margin-left: 40px;
+	font-size: 1.5em;
+	float:left;
+}
+.about-text h2{
+	font-weight: bold;
+	font-size: 1em;
+}
+.about-text h3{
+    padding-top: 10px;
+    padding-bottom: 30px;
+    line-height: 1.5em;
+}
+#main-container img {
+	width: 22%;
+	right: 11%;
+	position: absolute;
+	top: 175px;
+    padding: 20px 0;
+}
+#edge-left {
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 21%, rgba(99,99,99,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(21%, rgba(246,246,246,1)), color-stop(100%, rgba(99,99,99,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 21%, rgba(99,99,99,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 21%, rgba(99,99,99,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 21%, rgba(99,99,99,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 21%, rgba(99,99,99,1) 100%);
+}
+#edge-left {
+	width: 25px;
+    margin-left: -10px;
+}
+#edge-bottom {
+	width: 100%;
+	background-color: grey;
+	height: 25px;
+    margin-left: -10px !important; 
+
+	background: rgba(99,99,99,1);
+	background: -moz-linear-gradient(left, rgba(99,99,99,1) 0%, rgba(246,246,246,1) 79%, rgba(255,255,255,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(99,99,99,1)), color-stop(79%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
+	background: -webkit-linear-gradient(left, rgba(99,99,99,1) 0%, rgba(246,246,246,1) 79%, rgba(255,255,255,1) 100%);
+	background: -o-linear-gradient(left, rgba(99,99,99,1) 0%, rgba(246,246,246,1) 79%, rgba(255,255,255,1) 100%);
+	background: -ms-linear-gradient(left, rgba(99,99,99,1) 0%, rgba(246,246,246,1) 79%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(to right, rgba(99,99,99,1) 0%, rgba(246,246,246,1) 79%, rgba(255,255,255,1) 100%);
+}
+ul#about-menu {
+	list-style: none;
+	margin-top: -35px;
+}
+ul#about-menu li {
+	background-color: white;
+	float: left;
+	padding: 10px;
+	text-align: center;
+
+	font-size: 1.4em;
+	margin: 0px 10px;
+}
+ul#about-menu li#active {
+	border-bottom: 3px solid grey;
+	border-left: 3px solid grey;
+}
+
+
+@media screen and (min-width: 1150px){
+    #about-menu-container {
+        position: absolute;
+        top: 300px;
+        width: 70%;
+    }
+    #about-text-holder {
+    	width: 55%;
+    }
+    .about-text {
+        margin-top: 0px;
+    }
+    .about-text h3{
+        font-size: 1.3vw;
+    }
+    #edge-left {
+        height: 265px;
+    }
+}
+@media screen and (max-width: 1149px){
+    #about-menu-container {
+        top: 360px;
+    }
+    #about-text-holder {
+    	width: 62%;
+    	margin-top: 10px;
+    }
+    .about-text {
+    	margin-top: 0px;
+    }
+    .about-text h3 {
+        font-size: .7em;
+    }
+    h2 {
+        font-size: 2.25vw;
+        margin-top: 0px;
+    }
+    #main-container img {
+        right: 11% !important;
+    }
+    #edge-left {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 767px){
+    #about-text-holder {
+    	width: 90%;
+    	margin: 0 auto;
+    	max-height: unset;
+    }
+    .about-text {
+        margin-top: 80px;
+        margin-left: 0px;
+    }
+    h2, h3 {
+    	width: 100%;
+    	margin: 0 auto;
+    }
+    .about-text h2 {
+    	font-family: arial;
+    	font-size: 1em;
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 20px;
+    }
+    #main-container img {
+        position: fixed;
+        z-index: -4;
+        opacity: 0.05;
+        right: 0; left: 0; top: 0; bottom: 0;
+        width: 90%;
+    }
+
+    #about-menu-container {
+        position: absolute;
+        width: 90%;
+        top: 280px;
+    }
+    ul#about-menu {
+    	width: 100%;
+    	margin-bottom: 0px;
+    	height: 50px;
+    	padding-left: 0px;
+    }
+    ul#about-menu li {
+    	border-left: 1px solid black;
+    	font-size: 3.4vw;
+    	width: 25%;
+    	margin: 0px;
+        background-color: lightgrey;
+        color: white;
+    }
+    ul#about-menu li#active {
+        border-left: 1px solid black;
+    }
+    #edge-bottom {display: none;}
+    #edge-left {display: none;}
+}
