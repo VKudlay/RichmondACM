@@ -1,11 +1,8 @@
-#main-container h1, h2, h3 {
-    font-family: 'PT Sans Caption', sans-serif;
+main h1, h2, h3 {
+    /*font-family: 'PT Sans Caption', sans-serif;*/
 }
 
-#main-container {
-	margin: 50px auto;
-}
-#main-container h1 {
+main h1 {
 	padding: 30px 50px;
 	border-left: 3px solid black;
 } 
@@ -30,9 +27,9 @@
     padding-bottom: 30px;
     line-height: 1.5em;
 }
-#main-container img {
-	width: 22%;
-	right: 11%;
+main img {
+	width: 20%;
+	right: 12%;
 	position: absolute;
 	top: 175px;
     padding: 20px 0;
@@ -90,7 +87,7 @@ ul#about-menu li#active {
         width: 70%;
     }
     #about-text-holder {
-    	width: 55%;
+    	width: 50%;
     }
     .about-text {
         margin-top: 0px;
@@ -104,10 +101,10 @@ ul#about-menu li#active {
 }
 @media screen and (max-width: 1149px){
     #about-menu-container {
-        top: 360px;
+        margin-top: 80px;
     }
     #about-text-holder {
-    	width: 62%;
+    	width: 55%;
     	margin-top: 10px;
     }
     .about-text {
@@ -120,8 +117,8 @@ ul#about-menu li#active {
         font-size: 2.25vw;
         margin-top: 0px;
     }
-    #main-container img {
-        right: 11% !important;
+    main img {
+        right: 8% !important;
     }
     #edge-left {
         height: 250px;
@@ -129,7 +126,7 @@ ul#about-menu li#active {
 }
 @media screen and (max-width: 767px){
     #about-text-holder {
-    	width: 90%;
+    	width: 80%;
     	margin: 0 auto;
     	max-height: unset;
     }
@@ -148,7 +145,7 @@ ul#about-menu li#active {
         font-weight: bolder;
         margin-bottom: 20px;
     }
-    #main-container img {
+    main img {
         position: fixed;
         z-index: -4;
         opacity: 0.05;
@@ -158,8 +155,9 @@ ul#about-menu li#active {
 
     #about-menu-container {
         position: absolute;
-        width: 90%;
-        top: 270px;
+        width: 80%;
+        top: 300px;
+        margin-top:0px;
     }
     ul#about-menu {
     	width: 100%;
@@ -178,6 +176,5 @@ ul#about-menu li#active {
     ul#about-menu li#active {
         border-left: 1px solid black;
     }
-    #edge-bottom {display: none;}
-    #edge-left {display: none;}
+    #edge-bottom, #edge-left {display: none;}
 }

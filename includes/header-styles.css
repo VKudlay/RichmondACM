@@ -134,7 +134,13 @@ header {
 		width: 100% !important;
 	}
 }
+@media (min-width: 767px) {
+	ul.nav li.dropdown:hover > ul.dropdown-menu {
+		display: block;
+	}
+}
 @media screen and (max-width: 767px){
+
 	.navbar-collapse, div.navbar-inverse {
 		background-color: #333;
 		z-index: 100;
