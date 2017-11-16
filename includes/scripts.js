@@ -16,24 +16,17 @@ $(document).ready(function(){
 					<ul class="nav navbar-nav">
 				      	<li><a href = "index.html">Home</a></li>
 						<li><a href = "pages/about/index.html">About</a></li>
-						<li class="dropdown">					
-							<a href="pages/resources/index.html">
-				      			Resources<span class="caret"></span>
-				      		</a>
-							<ul class="dropdown-menu">
-								<li>Stuff</li>
-							</ul>
-						</li>
 						<li class="dropdown">
-							<a href="pages/career/index.html">
-				      			Careers
+							<a href="pages/resources/index.html">
+				      			Resources
 				      			<span class="caret"></span>
 				      		</a>
 							<ul class="dropdown-menu">
-								<li><a href="pages/career/paths/index.html">career paths in CS</a></li>
-								<li><a href="pages/career/advice/index.html">resume/career advice</a></li>
-								<li><a href="pages/career/resumes/index.html">student resumes</a></li>
-								<li><a href="pages/career/interview/index.html">interview prep</a></li>
+								<li><a href="pages/resources/paths/index.html">resources paths in CS</a></li>
+								<li><a href="pages/resources/advice/index.html">resume/resources advice</a></li>
+								<li><a href="pages/resources/resumes/index.html">student resumes</a></li>
+								<li><a href="pages/resources/interview/index.html">interview prep</a></li>
+								<li><a href="pages/resources/orgs/index.html">on-campus orgs</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
