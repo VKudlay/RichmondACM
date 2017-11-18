@@ -62,6 +62,7 @@ function setHeader(dir) {
 				</div>
 			</div>
 		</div>
+<<<<<<< HEAD
 
 	`);
 }
@@ -75,3 +76,19 @@ function setFooter(dir) {
 		<div id="Copyright">© 2017</div>
 	`);
 }
+=======
+	</div>
+</div>`);
+	//$("#footer").load("includes/footer.html");
+    $("footer").html(`
+    	<footer>
+			<img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/1024px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png">
+			<a href="#">Home</a>
+			<a href="#">Sitemap</a>
+			<a href="#">Contact Us</a>
+			<div id="Copyright">© 2017</div>
+		</footer>`);
+});
+
+//used only by about page; to be separated
+>>>>>>> 0b2717a9cbe9f507bdcd49d34e0b191a45f37490
