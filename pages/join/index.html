@@ -5,7 +5,6 @@
 	<!--Sets meta types about the website-->
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-        <meta name="level" content="2" />
 
 	<!--Sets title of the page-->
 		<title>ACM's Best Web</title> 								
@@ -24,12 +23,54 @@
 		<style type="text/css">	@import url("styles.css"); </style>
 		
 	<!--Pulls in CUSTOM JS Script-->
-    	<script type="text/javascript" src="../../includes/scripts.js"></script>
+    	<script type="text/javascript" src="../../includes/child-scripts.js"></script>
+    	<style>
+    		h1 {
+    			text-align: center;
+    			margin-top: 50px;
+    			padding: 20px 0px;
+    			font-size: 5em;
+    		}
+    		h3 {
+    			padding: 20px 0px;
+    			font-weight: bold;
+    			text-align: center;
+    			margin: auto;
+    			line-height: 1.5em;
+    		}
+    		h4 {
+    			font-weight: normal;
+    			text-align: center;
+    			line-height: 1.25em;
+    			width: 75%;
+    			margin: auto;
+    		}
+    		main div#form-segue {
+    			
+    			background: linear-gradient(to right, #11998e, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    			width: 200%; 
+    			margin: 50px 0 30px -50%;
+    			text-align: center; 
+    			color: white; 
+    			padding-top: 20px;
+    			height: 100px;
+    			font-size: 3em;
+    			vertical-align: center;
+    			float: none;
+    			display: inline-block;
+    		}
+    		main div.column {
+    			position: relative;
+
+    			margin-top: 20px;
+    		}
+    	</style>
 </head>
 
 <body>
 	<div id="container">
-		<header></header>
+		<header id="header"></header>
 
 		<main>
             <div id="main-container">
@@ -42,11 +83,11 @@
     			</div>
 
     			<div id="form-segue">Sign Up</div>
+    			<img id="spider-background" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Richmond_Spiders_logo.svg/744px-Richmond_Spiders_logo.svg.png">
     			<hr>
 
             </div>
 		</main>
-		<div id="spider-background"></div>
 
 		<footer></footer>
 	</div>

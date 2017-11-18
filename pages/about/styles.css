@@ -46,7 +46,7 @@ main img {
 	width: 100%;
 	background-color: grey;
 	height: 25px;
-    margin-left: -10px; 
+    margin-left: -10px !important; 
 
 	background: rgba(99,99,99,1);
 	background: -moz-linear-gradient(left, rgba(99,99,99,1) 0%, rgba(246,246,246,1) 79%, rgba(255,255,255,1) 100%);
@@ -80,7 +80,6 @@ ul#about-menu li#active {
         position: absolute;
         top: 300px;
         width: 70%;
-        left: 200px;
     }
     #about-text-holder {
     	width: 50%;
@@ -119,9 +118,6 @@ ul#about-menu li#active {
     #edge-left {
         height: 250px;
     }
-    #about-menu-container {
-        margin-left: 100px;
-    }
 }
 @media screen and (max-width: 767px){
     #about-text-holder {
@@ -155,9 +151,8 @@ ul#about-menu li#active {
     #about-menu-container {
         position: absolute;
         width: 80%;
-        top: 270px;
+        top: 300px;
         margin-top:0px;
-        margin: auto 10%;
     }
     ul#about-menu {
     	width: 100%;
