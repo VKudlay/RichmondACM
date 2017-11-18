@@ -3,36 +3,70 @@
 
 <head>
 	<!--Sets meta types about the website-->
-		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" /> 
 
 	<!--Sets title of the page-->
-		<title>ACM's Best Web</title> 								
+	<title>ACM's Best Web</title> 								
 
 	<!--Sets title of the page-->
-		<meta http-equiv="description" content="This is a crawlable description" />
+	<meta http-equiv="description" content="This is a crawlable description" />
+	<meta name="level" content="1" />
 
-    <!--Bootstrap + Query Implementation -->
-    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--Bootstrap + Query Implementation -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<!--Pulls in ALL CUSTOM CSS Stylesheet-->
-		<style type="text/css"> @import url("includes/header-styles.css"); </style>
-		<style type="text/css"> @import url("includes/shared-styles.css"); </style>
-		<style type="text/css">	@import url("includes/styles.css"); </style>
+	<style type="text/css"> @import url("includes/header-styles.css"); </style>
+	<style type="text/css"> @import url("includes/shared-styles.css"); </style>
+	<style type="text/css">	@import url("styles.css"); </style>
 
 	<!--Pulls in CUSTOM JS Script-->
-    	<script type="text/javascript" src="includes/scripts.js"></script>
-
+	<script type="text/javascript" src="includes/scripts.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
 </head>
 
 <body>
 	<div id="container">
-		<header id="header"></header>
+		<header></header>
 
-		<main></main>
+		<main>
+			<div id="carousel" class="carousel slide" data-ride="carousel">
 
+				<!-- Indicators -->
+				<ul class="carousel-indicators">
+					<li data-target="#carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel" data-slide-to="1"></li>
+					<li data-target="#carousel" data-slide-to="2"></li>
+				</ul>
+
+				<!-- The slideshow -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="http://www.northernsound.ie/wp-content/uploads/sites/20/coding.jpg" alt="Picture 1"/>
+					</div>
+					<div class="item">
+						<img src="https://www.strath.ac.uk/media/1newwebsite/imagesbysize/1600x600/advanced_computer_science.jpg.pagespeed.ce.Oi-dxy9DbK.jpg" alt="Chicago">
+					</div>
+					<div class="item">
+						<img src="https://az616578.vo.msecnd.net/files/2016/05/20/635993018853356660-885540760_concepting.jpg" alt="New York">
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#carousel" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+		</main>
+		<div id="spider-background"></div>
+		
 		<footer></footer>
 	</div>
 </body>
