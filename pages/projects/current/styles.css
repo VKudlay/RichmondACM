@@ -91,12 +91,3 @@ main h1 {
 	font-size: 15px;
 
 }
-
-img {
-    position: fixed;
-    z-index: -4;
-    opacity: 0.05;
-   	left: 0; top: 50px; bottom: 0;
-    width: 50%;
-
-}
