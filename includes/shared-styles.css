@@ -4,6 +4,7 @@ body {
 
 main {
 	min-height: 500px;
+	margin-top: -20px;
 }
 main #main-container {
 	margin: 0 auto 100px auto;
@@ -31,6 +32,9 @@ main h1 {
 	}
 }
 @media screen and (max-width: 1149px){
+	main {
+		margin-top: 50px;
+	}
 	main #main-container {
 		width: 80%;
 		padding-top: 10px;
@@ -42,6 +46,9 @@ main h1 {
 }
 
 @media screen and (max-width: 767px){
+	main {
+		margin-top: -20px;
+	}
 	main #main-container {
 		padding-top: 0px;
 	}
@@ -50,4 +57,5 @@ main h1 {
 		padding: 15px 30px !important;
 		margin: 0 auto 30px auto;
 	}
+}}
 }
