@@ -1,180 +1,66 @@
-main h1, h2, h3 {
-    /*font-family: 'PT Sans Caption', sans-serif;*/
+.about-text h2{
+    font-weight: bold;
+    font-size: 1.7em;
+}
+.about-text h3{
+    margin-top: 40px;
+    padding: 10px 25px;
+    line-height: 1.5em;
+    font-size: 1.3em;
+    background-color: #F4F4F8;
+    border-radius: 0px 0px 40px 0px;
 }
 
 #about-text-holder {
-	max-height: 310px;
-	overflow: hidden;
-	position: absolute;
-	z-index: 0;
+    float: left;
+    width: 70%;
+    min-height: 100px;
+    vertical-align: center;
 }
-.about-text{
-	margin-left: 40px;
-	font-size: 1.5em;
-	float:left;
-}
-.about-text h2{
-	font-weight: bold;
-	font-size: 1em;
-}
-.about-text h3{
-    padding-top: 10px;
-    padding-bottom: 30px;
-    line-height: 1.5em;
-}
-main img {
-	width: 20%;
-	right: 12%;
-	position: absolute;
-	top: 175px;
-    padding: 20px 0;
-}
-#edge-left {
-	background: rgba(255,255,255,1);
-	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 21%, rgba(99,99,99,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(21%, rgba(246,246,246,1)), color-stop(100%, rgba(99,99,99,1)));
-	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 21%, rgba(99,99,99,1) 100%);
-	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 21%, rgba(99,99,99,1) 100%);
-	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 21%, rgba(99,99,99,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 21%, rgba(99,99,99,1) 100%);
-}
-#edge-left {
-	width: 25px;
-    margin-left: -10px;
-}
-#edge-bottom {
-	width: 100%;
-	background-color: grey;
-	height: 25px;
-    margin-left: -10px; 
+#about-menu {
+    margin-top: 0px;
+    display: inline-grid;
+    float: left;
+    width: 25%;
+    margin-top: 0px;
+    margin-left: 5%;
+    padding: 0px;
 
-	background: rgba(99,99,99,1);
-	background: -moz-linear-gradient(left, rgba(99,99,99,1) 0%, rgba(246,246,246,1) 79%, rgba(255,255,255,1) 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(99,99,99,1)), color-stop(79%, rgba(246,246,246,1)), color-stop(100%, rgba(255,255,255,1)));
-	background: -webkit-linear-gradient(left, rgba(99,99,99,1) 0%, rgba(246,246,246,1) 79%, rgba(255,255,255,1) 100%);
-	background: -o-linear-gradient(left, rgba(99,99,99,1) 0%, rgba(246,246,246,1) 79%, rgba(255,255,255,1) 100%);
-	background: -ms-linear-gradient(left, rgba(99,99,99,1) 0%, rgba(246,246,246,1) 79%, rgba(255,255,255,1) 100%);
-	background: linear-gradient(to right, rgba(99,99,99,1) 0%, rgba(246,246,246,1) 79%, rgba(255,255,255,1) 100%);
-}
-ul#about-menu {
-	list-style: none;
-	margin-top: -35px;
-}
-ul#about-menu li {
-	background-color: white;
-	float: left;
-	padding: 10px;
-	text-align: center;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
 
-	font-size: 1.4em;
-	margin: 0px 10px;
 }
-ul#about-menu li#active {
-	border-bottom: 3px solid grey;
-	border-left: 3px solid grey;
+#about-menu li {
+    float: left;
+    width: 100%;
+    height: 80px;
+    padding-top: 25px;
+    margin: 1px auto;
+
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+
+    background: #8e9eab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e9eab, #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+    background-color: grey;
+    transition-duration: 500ms; 
+}
+#about-menu li:hover {
+    margin: 5px auto;
+    margin-left: -10%;
+    width: 120%;
+    background: none;
 }
 
+.about-text:nth-child(1) h2 { color: red; }
+.about-text:nth-child(2) h2 { color: limegreen; }
+.about-text:nth-child(3) h2 { color: navy; }
+.about-text:nth-child(4) h2 { color: coral; }
 
-@media screen and (min-width: 1150px){
-    #about-menu-container {
-        position: absolute;
-        top: 300px;
-        width: 70%;
-        left: 200px;
-    }
-    #about-text-holder {
-    	width: 50%;
-    }
-    .about-text {
-        margin-top: 0px;
-    }
-    .about-text h3{
-        font-size: 1.3vw;
-    }
-    #edge-left {
-        height: 265px;
-    }
-}
-@media screen and (max-width: 1149px){
-    #about-menu-container {
-        margin-top: 80px;
-    }
-    #about-text-holder {
-    	width: 55%;
-    	margin-top: 10px;
-    }
-    .about-text {
-    	margin-top: 0px;
-    }
-    .about-text h3 {
-        font-size: .7em;
-    }
-    h2 {
-        font-size: 2.25vw;
-        margin-top: 0px;
-    }
-    main img {
-        right: 8% !important;
-    }
-    #edge-left {
-        height: 250px;
-    }
-    #about-menu-container {
-        margin-left: 100px;
-    }
-}
-@media screen and (max-width: 767px){
-    #about-text-holder {
-    	width: 80%;
-    	margin: 0 auto;
-    	max-height: unset;
-    }
-    .about-text {
-        margin-top: 60px;
-        margin-left: 0px;
-    }
-    h2, h3 {
-    	width: 100%;
-    	margin: 0 auto;
-    }
-    .about-text h2 {
-    	font-family: arial;
-    	font-size: 1em;
-        text-align: center;
-        font-weight: bolder;
-        margin-bottom: 20px;
-    }
-    main img {
-        position: fixed;
-        z-index: -4;
-        opacity: 0.05;
-        right: 0; left: 0; top: 0; bottom: 0;
-        width: 90%;
-    }
-
-    #about-menu-container {
-        position: absolute;
-        width: 80%;
-        top: 270px;
-        margin-top:0px;
-        margin: auto 10%;
-    }
-    ul#about-menu {
-    	width: 100%;
-    	margin-bottom: 0px;
-    	height: 50px;
-    	padding-left: 0px;
-    }
-    ul#about-menu li {
-    	border-left: 1px solid black;
-    	font-size: 3.4vw;
-    	width: 25%;
-    	margin: 0px;
-        background-color: lightgrey;
-        color: white;
-    }
-    ul#about-menu li#active {
-        border-left: 1px solid black;
-    }
-    #edge-bottom, #edge-left {display: none;}
-}
+#about-menu li:nth-child(1):hover { background-color: red; }
+#about-menu li:nth-child(2):hover { background-color: limegreen; }
+#about-menu li:nth-child(3):hover { background-color: navy; }
+#about-menu li:nth-child(4):hover { background-color: coral; }

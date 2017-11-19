@@ -14,8 +14,10 @@ main h1 {
 	padding: 20px;
 	font-size: 3em;
 	width: fit-content;
-	margin: 0 auto;
+	margin: 40px auto 0 auto;
 } 
+
+ul li { list-style: none; }
 
 #spider-background {
 	background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Richmond_Spiders_logo.svg/744px-Richmond_Spiders_logo.svg.png");
@@ -28,7 +30,7 @@ main h1 {
 
 @media screen and (min-width: 1150px){
 	main #main-container {
-		width: 60%;
+		width: 65%;
 	}
 }
 @media screen and (max-width: 1149px){
