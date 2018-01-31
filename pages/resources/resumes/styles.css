@@ -1,0 +1,114 @@
+#main-container {
+  font-size: 1.1em;
+}
+#resume-catalog {
+
+}
+
+/* Thumbnail Resume Item Attributes */
+.resume-item {
+  float: left;
+  width: 23%;
+  margin: 20px 1%;
+}
+.resume-item .resume-title {
+  background: linear-gradient(to bottom, white, #DDD);
+}
+.resume-item h4{
+  margin: 0;
+  height: 30px;
+
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.7vw;
+
+  background-color: #555;
+  color: #DDD;
+}
+.resume-item h3 {
+  padding: 10px 0px;
+  text-align: center;
+  font-size: 1.5vw;
+  background-color: white;
+
+  border-bottom: 3px solid red;
+}
+.resume-item .resume-title > img, .resume-item .img-holder {
+  object-fit: cover;
+  width: 60%;
+  margin-top: 50%;
+  margin: 20px 20% 0px 20%;
+}
+.resume-item .img-holder img {
+  width: 70%;
+  margin-top: -20%;
+}
+.resume-item .img-holder img:first-child { margin-left: -20%; }
+.resume-item .img-holder img:nth-child(2){ margin-left:  40%; }
+
+.resume-meta {
+  display: none;
+}
+
+.resume-item .view-btn {
+  display: none;
+  width: 100%;
+  margin: 0;
+
+  border: 0px;
+
+  font-size: 1.8em;
+  background-color: #66B;
+  color: white;
+}
+
+.resume-item .file-btn {
+  display: none;
+  width: 50%;
+  margin: 0;
+  border: 0px;
+}
+.resume-item .file-btn[type]:before {
+  font-size: 1.6vw;
+  color: white;
+  position: relative;
+  content: attr(type);
+  margin: 0 25%;
+}
+.resume-item .file-btn[type="pre"] {
+  float: left;
+  background-color: #F44;
+}
+.resume-item .file-btn[type="post"] {
+  float: right;
+  background-color: #66F;
+}
+
+#popup-page {
+  display: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+}
+#popup-page #back-screen {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  background-color: black;
+  opacity: 0.3;
+}
+#popup-page #content-screen {
+  position: fixed;
+  width: 60%;
+  height: 80vh;
+  margin: 10vh 20%;
+  background-color: grey;
+
+  opacity: 1;
+}

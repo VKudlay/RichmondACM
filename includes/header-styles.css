@@ -50,7 +50,7 @@ header {
 		background-color: white;
 	}
 	.navbar-collapse {
-	    background-color: white !important; 
+	    background-color: white !important;
 	    border-color: #e74c3c !important;
 	}
 	/* Title */
@@ -146,7 +146,7 @@ header {
 		z-index: 100;
 	}
 	.navbar-collapse {
-	    background-color: #333 !important; 
+	    background-color: #333 !important;
 	    border-color: #e74c3c !important;
 	}
 
@@ -178,7 +178,7 @@ header {
 		display: block;
 		overflow: hidden;
 		float: none;
-		margin: 2px auto;		
+		margin: 2px auto;
 		width: 200px;
 		background-color: #333
 	}
@@ -214,33 +214,38 @@ footer {
 	width: 100%;
 	height: 80px;
 	background: #243B55;
-	
+
 }
-footer img {
-    margin: 10px;
-    margin-left: 40px;
-    margin-right: 400px;
-	position: relative;
-	float: left;
+footer div#acmholder img {
+  width: 60px;
+  margin: 0 auto;
+  margin: 10px;
+	position: absolute;
 	height: 60px;
+}
+footer div#footmenu {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  height: 100%;
 }
 footer a {
 	margin: 30px 10px;
-	padding-right: 20px;
 	position: relative;
 	float: left;
 	color: #DCDCDC;
-	border-right: 4px solid Gainsboro;
-	border-width: 2px
+}
+footer a:not(:first-of-type) {
+  padding-left: 20px;
+	border-left: 2px solid Gainsboro;
 }
 footer a:hover {
 	color: Grey;
 	text-decoration: none;
 }
 #Copyright {
-	float: right;
+	position: absolute;
+  top: 20px;
+  right: 10px;
 	color: grey;
-	margin: 30px 30px;
 }
-
-

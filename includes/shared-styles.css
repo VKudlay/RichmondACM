@@ -5,6 +5,7 @@ body {
 main {
 	min-height: 500px;
 	margin-top: -20px;
+	display: grid;
 }
 main #main-container {
 	margin: 0 auto 100px auto;

@@ -4,11 +4,11 @@
 <head>
 	<!--Sets meta types about the website-->
 		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="level" content="3" />
 
 	<!--Sets title of the page-->
-		<title>ACM's Best Web</title> 								
+		<title>ACM's Best Web</title>
 
 	<!--Sets title of the page-->
 		<meta http-equiv="description" content="This is a crawlable description" />
@@ -22,16 +22,101 @@
 		<style type="text/css"> @import url("../../../includes/header-styles.css");</style>
 		<style type="text/css"> @import url("../../../includes/shared-styles.css");</style>
 		<style type="text/css">	@import url("styles.css"); </style>
-		
+
 	<!--Pulls in CUSTOM JS Script-->
     	<script type="text/javascript" src="../../../includes/scripts.js"></script>
+			<script type="text/javascript" src="scripts.js"></script>
 </head>
 
 <body>
 	<div id="container">
 		<header></header>
 
-		<main><h1>Resume Help</h1></main>
+		<main>
+			<h1>Student Resumes</h1>
+			<div id="main-container">
+				This is the student resumes section. In here, you will find the resumes of actual UR students
+				who got internships during their college career. Hopefully, it'll provide some insight into
+				how they got their internships because you'll be able to view their resume from before their
+				internship (the resume they submitted) and their resume after their internship. Below, we have
+				provided as much information we can about the student to the extent they were comfortable with.
+				<hr/>
+				<div id="resume-catalog">
+					<div class="resume-item">
+						<div class="resume-title">
+							<h4>Internship at</h4>
+							<image src="internlogo1.png">
+							<h3>Data Directions, Inc.</h3>
+						</div>
+						<div class="resume-meta">
+							<p class="description">
+								This person did their internship at Data Directions, Inc.
+							</p>
+							<button class="file-btn" url="http://os_extranet_files_test.s3.amazonaws.com/45328_95934_dataDirections_pre.pdf">Pre</button>
+							<button class="file-btn" url="http://os_extranet_files_test.s3.amazonaws.com/45328_95935_dataDirections_post.pdf">Post</button>
+						</div>
+					</div>
+					<div class="resume-item">
+						<div class="resume-title">
+							<h4>Internship at</h4>
+							<image src="https://www.defense.gov/portals/_default/skins/DefenseGOV/Resources/img/seal.svg">
+							<h3>Dept of Defense</h3>
+						</div>
+					</div>
+					<div class="resume-item">
+						<div class="resume-title">
+							<h4>Internship at</h4>
+							<image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Goldman_Sachs.svg/1200px-Goldman_Sachs.svg.png">
+							<h3>Goldman Sachs</h3>
+						</div>
+					</div>
+					<div class="resume-item">
+						<div class="resume-title">
+							<h4>Internship at</h4>
+							<image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Goldman_Sachs.svg/1200px-Goldman_Sachs.svg.png">
+							<h3>Goldman Sachs</h3>
+						</div>
+					</div>
+					<div class="resume-item">
+						<div class="resume-title">
+							<h4>Internship at</h4>
+							<div class="img-holder">
+								<image src="internlogo2.png">
+								<image src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/512/Amazon-icon.png">
+							</div>
+							<h3>IBM + Amazon</h3>
+						</div>
+					</div>
+					<div class="resume-item">
+						<div class="resume-title">
+							<h4>Internship at</h4>
+							<image src="https://fr.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/24241/versions/5/screenshot.png">
+							<h3>MathWorks</h3>
+						</div>
+					</div>
+					<div class="resume-item">
+						<div class="resume-title">
+							<h4>Internship at</h4>
+							<image src="http://www.greenwoodindy.com/wp-content/uploads/2016/07/pnc2.png">
+							<h3>PNC Bank</h3>
+						</div>
+					</div>
+					<div class="resume-item">
+						<div class="resume-title">
+							<h4>Internship at</h4>
+							<image src="https://media.glassdoor.com/sqll/261789/timmons-group-squarelogo.png">
+							<h3>Timmons Group</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="popup-page">
+				<div id="back-screen"></div>
+				<div id="content-screen"></div>
+			</div>
+
+		</main>
 		<div id="spider-background"></div>
 
 		<footer></footer>

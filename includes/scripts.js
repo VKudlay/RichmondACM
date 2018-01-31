@@ -24,7 +24,7 @@ function setHeader(dir) {
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 			    			<span class="icon-bar"></span>
 			    			<span class="icon-bar"></span>
-			    			<span class="icon-bar"></span>                        
+			    			<span class="icon-bar"></span>
 			  			</button>
 
 					  	<div class="collapse navbar-collapse" id="myNavbar" aria-expanded="false" style="height: 0px;">
@@ -45,7 +45,7 @@ function setHeader(dir) {
 									</ul>
 								</li>
 								<li class="dropdown">
-									<a href = "`+dir+`pages/projects/index.html">
+									<a href = "`+dir+`pages/projects/current/index.html">
 						      			Projects<span class="caret"></span>
 						      		</a>
 									<ul class="dropdown-menu">
@@ -68,10 +68,14 @@ function setHeader(dir) {
 
 function setFooter(dir) {
     $("footer").html(`
-		<img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/1024px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png">
-		<a href="#">Home</a>
-		<a href="#">Sitemap</a>
-		<a href="#">Contact Us</a>
+		<div id="acmholder">
+			<img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/1024px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png">
+		</div>
+		<div id="footmenu">
+			<a href="#">Home</a>
+			<a href="#">Sitemap</a>
+			<a href="#">Contact Us</a>
+		</div>
 		<div id="Copyright">© 2017</div>
 	`);
 }

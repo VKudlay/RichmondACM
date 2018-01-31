@@ -19,19 +19,17 @@ h4 {
 	margin: auto;
 }
 main div#form-segue {
-	
+
 	background: linear-gradient(to right, #11998e, #38ef7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-	width: 200%; 
-	margin: 50px 0 30px -50%;
-	text-align: center; 
-	color: white; 
-	padding-top: 20px;
-	height: 100px;
+	width: 100%;
+	text-align: center;
+	margin: -30px auto 100px auto;
+	width: 100%;
+	color: white;
+	line-height: 120px;
+	height: 120px;
 	font-size: 3em;
-	vertical-align: center;
-	float: none;
-	display: inline-block;
 }
 main div.column {
 	position: relative;
