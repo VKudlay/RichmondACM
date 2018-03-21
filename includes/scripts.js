@@ -47,11 +47,12 @@ function setHeader(dir) {
 						      			Activities<span class="caret"></span>
 						      		</a>
 									<ul class="dropdown-menu">
-										<li><a href = "`+dir+`pages/activities/current/index.html">SpiderHacks: UR Local Hackathon</a></li>
-										<li><a href = "`+dir+`pages/activities/past/index.html">Current + Past Projects</a></li>
+										<li><a href = "`+dir+`pages/activities/hackathon/index.html">SpiderHacks</a></li>
+										<li><a href = "`+dir+`pages/activities/current/index.html">Current Project Areas</a></li>
+										<li><a href = "`+dir+`pages/activities/past/index.html">Past Projects</a></li>
+										<li><a href = "`+dir+`pages/activities/volunteer/index.html">Volunteer</a></li>
 									</ul>
 								</li>
-								<li><a href = "`+dir+`pages/volunteer/index.html">Volunteer</a></li>
 								<li><a href = "https://tinyurl.com/joinACMur2017" target="_blank">Join ACM</a></li>
 						    </ul>
 						 </div>
