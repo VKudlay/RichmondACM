@@ -15,7 +15,6 @@ function getLevel(){
 
 function setHeader(dir) {
     $("header").html(`
-
 		<div class="navbar navbar-inverse">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -29,33 +28,31 @@ function setHeader(dir) {
 
 					  	<div class="collapse navbar-collapse" id="myNavbar" aria-expanded="false" style="height: 0px;">
 							<ul class="nav navbar-nav">
-						      	<li><a href = "`+dir+`index.html">Home</a></li>
+								<li><a href = "`+dir+`index.html">Home</a><li>
 								<li><a href = "`+dir+`pages/about/index.html">About</a></li>
 								<li class="dropdown">
-									<a href = "`+dir+`pages/resources/index.html">
-						      			Resources
+									<a href = "#">
+						      			Career Resources
 						      			<span class="caret"></span>
 						      		</a>
 									<ul class="dropdown-menu">
-										<li><a href = "`+dir+`pages/resources/paths/index.html">career paths in CS</a></li>
-										<li><a href = "`+dir+`pages/resources/advice/index.html">resume/career advice</a></li>
-										<li><a href = "`+dir+`pages/resources/resumes/index.html">student resumes</a></li>
-										<li><a href = "`+dir+`pages/resources/interview/index.html">interview prep</a></li>
-										<li><a href = "`+dir+`pages/resources/orgs/index.html">on-campus orgs</a></li>
+										<li><a href = "`+dir+`pages/resources/paths/index.html">Career Paths in CS</a></li>
+										<li><a href = "`+dir+`pages/resources/advice/index.html">Resume/Career Advice</a></li>
+										<li><a href = "`+dir+`pages/resources/resumes/index.html">Student Resumes</a></li>
+										<li><a href = "`+dir+`pages/resources/interview/index.html">Interview Prep</a></li>
 									</ul>
 								</li>
 								<li class="dropdown">
-									<a href = "`+dir+`pages/projects/current/index.html">
-						      			Projects<span class="caret"></span>
+									<a href = "#">
+						      			Activities<span class="caret"></span>
 						      		</a>
 									<ul class="dropdown-menu">
-										<li><a href = "`+dir+`pages/projects/current/index.html">current projects</a></li>
-										<li><a href = "`+dir+`pages/projects/past/index.html">past projects</a></li>
+										<li><a href = "`+dir+`pages/activities/current/index.html">SpiderHacks: UR Local Hackathon</a></li>
+										<li><a href = "`+dir+`pages/activities/past/index.html">Current + Past Projects</a></li>
 									</ul>
 								</li>
 								<li><a href = "`+dir+`pages/volunteer/index.html">Volunteer</a></li>
-								<li><a href = "`+dir+`pages/join/index.html">Join</a></li>
-								<li><a href = "`+dir+`pages/contact/index.html">Contact</a></li>
+								<li><a href = "https://tinyurl.com/joinACMur2017" target="_blank">Join ACM</a></li>
 						    </ul>
 						 </div>
 			  		</div>
@@ -69,13 +66,13 @@ function setHeader(dir) {
 function setFooter(dir) {
     $("footer").html(`
 		<div id="acmholder">
-			<img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/1024px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png">
+			<img src="`+dir+`includes/UR-ACM-Logo.png">
 		</div>
 		<div id="footmenu">
-			<a href="#">Home</a>
-			<a href="#">Sitemap</a>
-			<a href="#">Contact Us</a>
+			<a href="`+dir+`index.html">Home</a>
+			// <a href="#">Sitemap</a>
+			<a href="mailto:acm.urichmond@gmail.com">Contact Us</a>
 		</div>
-		<div id="Copyright">© 2017</div>
+		<span id="Copyright">© ACM UR 2017 - 18</span>
 	`);
 }
